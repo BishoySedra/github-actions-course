@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: "30 * * * *"  # Runs every hour at the 30th minute
+    - cron: "34 * * * *"  # Runs every hour at the 34th minute
 
 jobs:
   daily-task:
