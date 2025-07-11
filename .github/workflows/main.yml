@@ -1,0 +1,19 @@
+name: First Workflow
+
+# trigger --> jobs --> runner --> steps
+
+# trigger
+on:
+  push:
+    branches:
+      - main
+# jobs
+jobs:
+  example-job:
+    # runner
+    runs-on: ubuntu-latest
+
+    # steps
+    steps:
+      - name: Print a welcome message
+        run: echo "Welcome to our first Github Actions Workflow!"
