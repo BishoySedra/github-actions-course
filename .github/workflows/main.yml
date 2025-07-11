@@ -2,7 +2,7 @@ name: First Workflow
 
 # trigger --> jobs --> runner --> steps
 
-# trigger
+# trigger: web hook, scheduled & manual trigger
 on:
   push:
     branches:
