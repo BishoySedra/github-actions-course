@@ -1,6 +1,7 @@
 on:
   schedule:
-    - cron: "39 * * * *"  # Runs every hour at the 34th minute
+    - cron: "42 * * * *"  # Runs every hour at the 34th minute
+  workflow_dispatch:
 
 jobs:
   daily-task:
