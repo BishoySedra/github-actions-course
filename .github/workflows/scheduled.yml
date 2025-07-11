@@ -1,7 +1,7 @@
 on:
   schedule:
-    - cron: "42 * * * *"  # Runs every hour at the 34th minute
-  workflow_dispatch:
+    - cron: "45 15 * * *"  # 3:45 PM UTC = 6:45 PM Egypt
+
 
 jobs:
   daily-task:
