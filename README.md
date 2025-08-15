@@ -37,3 +37,46 @@ Each of the five digits in a cron expression represents a specific time unit:
 ### Combined Example
 - `0 12 1 1 *`: Runs at noon on January 1st, regardless of the day of the week.
 - `0 0 * * 0`: Runs at midnight every Sunday.
+
+## GitHub CLI Commands for Workflows
+The GitHub CLI (`gh`) provides powerful commands to manage workflows directly from the terminal. Here are the most important commands you should know:
+
+### Workflow Management
+- **List Workflows**: View all workflows in a repository.
+  ```bash
+  gh workflow list
+  ```
+- **View Workflow Details**: Display detailed information about a specific workflow.
+  ```bash
+  gh workflow view <workflow-name>
+  ```
+- **Enable Workflow**: Enable a disabled workflow.
+  ```bash
+  gh workflow enable <workflow-name>
+  ```
+- **Disable Workflow**: Disable a workflow.
+  ```bash
+  gh workflow disable <workflow-name>
+  ```
+
+### Workflow Runs
+- **List Workflow Runs**: View all runs for a specific workflow.
+  ```bash
+  gh run list --workflow=<workflow-name>
+  ```
+- **View Run Details**: Display detailed information about a specific run.
+  ```bash
+  gh run view <run-id>
+  ```
+- **Re-run Workflow**: Re-run a specific workflow run.
+  ```bash
+  gh run rerun <run-id>
+  ```
+
+### Trigger Workflow
+- **Dispatch Workflow**: Manually trigger a workflow using the `workflow_dispatch` event.
+  ```bash
+  gh workflow run <workflow-name>
+  ```
+
+These commands simplify managing workflows and monitoring their execution directly from the command line.
